@@ -22,8 +22,8 @@ Before you begin, ensure you have met the following requirements:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-repo-url.git
-    cd your-repo-directory
+    git clone https://github.com/mayankysharma/ROS2-ReactJS-App.git
+    cd ROS2-ReactJS-App/
     ```
 
 2. **Install the required Python packages:**
@@ -43,7 +43,8 @@ Before you begin, ensure you have met the following requirements:
 5. **Run the FastAPI server:**
 
     ```bash
-    python3 backend.py
+    cd Backend/
+    python3 ros2_backend.py
     ```
 
     The backend should now be running on `http://localhost:8000`.
@@ -73,7 +74,7 @@ Before you begin, ensure you have met the following requirements:
 ## Run Front and Backend together
 ### Make sure to edit `start.sh` file by giving proper paths 
 ```bash
-cd ros2-web-app/
+cd ROS2-ReactJS-App/
 ./start.sh
 ```
 
