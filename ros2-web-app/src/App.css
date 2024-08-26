@@ -1,0 +1,72 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.App-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.App-header h1 {
+  color: #ecf0f1; /* A lighter white-gray for a professional look */
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.button-wrapper {
+  background: #2c3e50;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.robot-button {
+  background-color: #3498db; /* Default button color: blue */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.robot-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Camera Feed */
+.camera-feed {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
