@@ -1,4 +1,8 @@
 # ROS2-Web-App
+<p align="center">
+
+<img  alt="Template"  src="./Template.png"  width="100%" />
+</p>
 
 This project is a web application that provides a user interface for controlling and interacting with Robot using ROS 2 commands. The application is built with a FastAPI backend and a React frontend.
 
