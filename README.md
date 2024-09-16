@@ -1,10 +1,29 @@
 # ROS2-Web-App
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <p align="center">
 
 <img  alt="Template"  src="./Template.png"  width="100%" />
 </p>
 
-This project is a web application that provides a user interface for controlling and interacting with Robot using ROS 2 commands. The application is built with a FastAPI backend and a React frontend.
+This project is a web application that provides a user-friendly interface for controlling and interacting with a robot using ROS 2 commands. Communication between the frontend and the robot is enabled through **WebSockets**, using the **rosbridge_server** to expose ROS 2 functionalities via a JSON API.
+### Key technologies include:
+
+- **ReactJS**: For building dynamic and efficient user interfaces.
+- **Node.js** and **Express**: Used for the backend server, providing a flexible and minimal framework.
+- **rosbridge_server**: Facilitates WebSocket communication between the web app and ROS 2.
+- WebSockets: Enables full-duplex communication between frontend and backend in real time.
+- **CSS**: Ensures a modern and responsive UI design.
+This setup allows for seamless interaction with the robot, whether it’s for remote control, mapping, or navigation.
+
+## Dependencies 
+Make sure to install the dependencies
+- Node.js
+- npm
+- React
+- Express
+- CORS
+- ROSLIB
+- rosbridge_suite
 
 ## Features
 
@@ -30,13 +49,9 @@ Before you begin, ensure you have met the following requirements:
     cd ROS2-ReactJS-App/
     ```
 
-2. **Install the required Python packages:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
 
-4. **Ensure ROS 2 is sourced:**
+2. **Ensure ROS 2 is sourced:**
 
     Add the following line to your `.bashrc` or execute it in your terminal:
 
@@ -44,21 +59,20 @@ Before you begin, ensure you have met the following requirements:
     source /opt/ros/humble/setup.bash
     ```
 
-5. **Run the FastAPI server:**
+
+3. **Run the Backend NodeJS server:**
 
     ```bash
-    cd Backend/
-    python3 ros2_backend.py
+    cd backend/
+    node server.js
     ```
-
-    The backend should now be running on `http://localhost:8000`.
 
 ## Setting Up the Frontend
 
 1. **Navigate to the frontend directory (if applicable):**
 
     ```bash
-    cd ros2-web-app/
+    cd ros2-react-app/
     ```
 
 2. **Install the required npm packages:**
@@ -74,13 +88,25 @@ Before you begin, ensure you have met the following requirements:
     ```
 
     The frontend should now be running on `http://localhost:3000`.
-
 ## Run Front and Backend together
-### Make sure to edit `start.sh` file by giving proper paths 
+### Make sure to edit `run_commands.sh` file by giving proper paths 
+#### Giving permission to the shell script
 ```bash
-cd ROS2-ReactJS-App/
-./start.sh
+cd robot_ui_app/
+chmod +x run_commands.sh
 ```
+#### Then run shell script
+```bash
+ cd robot_ui_app/
+./run_commands.sh
+```
+## Use a `start.desktop` file to run the shell script
+#### Created a .desktop file to run the shell script by clicking on a icon.
+
+
+<div style>
+  <img alt="Template" src="./icon.jpeg" width="40%" />
+</div>
 
 ## License
 

@@ -1,0 +1,11 @@
+
+
+[Desktop Entry]
+Name=UI App
+Comment=Runs my custom shell script
+Exec= path to /run_commands.sh
+Icon= path to/icon.png
+
+Terminal=true
+Type=Application
+Categories=Utility;
